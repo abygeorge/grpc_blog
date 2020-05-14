@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+// option java_multiple_files = true;
+// option java_package = "io.grpc.examples.helloworld";
+// option java_outer_classname = "HelloWorldProto";
+// option objc_class_prefix = "HLW";
+
+package blog_app;
+
+// The greeting service definition.
+service blog_post {
+  rpc Show (ShowRequest) returns (ShowReply) {}
+}
+
+message Blog {
+  int32 id = 1;
+  string title = 2;
+}
+
+message ShowRequest {
+  int32 id = 1;
+}
+
+message ShowReply {
+  Blog blog = 1;
+}
