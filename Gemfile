@@ -57,3 +57,7 @@ gem 'grpc'
 gem 'google-protobuf', '~> 3.12.0-rc1'
 gem 'grpc-tools', '~> 1.28.0'
 gem 'pg'
+
+# group :development do
+#     gem 'mina', '~> 0.3.0'
+# end

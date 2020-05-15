@@ -26,4 +26,4 @@ Things you may want to cover:
 # grpc_blog
 
 Generate proto file
-grpc_tools_ruby_protoc -I protos --ruby_out=lib/ --grpc_out=lib/ protos/blog.proto
+grpc_tools_ruby_protoc -I protos --ruby_out=lib/protos/ --grpc_out=lib/protos/ protos/blog.proto

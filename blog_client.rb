@@ -3,11 +3,11 @@ lib_dir = File.join(this_dir, 'lib')
 $LOAD_PATH.unshift(lib_dir) unless $LOAD_PATH.include?(lib_dir)
 
 require 'grpc'
-require 'blog_services_pb'
+require './lib/blog_service'
 
 def main
-  stub = BlogApp::BlogPost::Stub.new('localhost:3001', :this_channel_is_insecure)
-  message = stub.show(BlogApp::ShowRequest.new(id: 1)).blog
+  stub = Blog::BlogService::Stub.new('localhost:3001', :this_channel_is_insecure)
+  message = stub.show(Blog::ShowRequest.new(id: 1)).blog_post
   p message
 end
 

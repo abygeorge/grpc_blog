@@ -5,14 +5,14 @@ syntax = "proto3";
 // option java_outer_classname = "HelloWorldProto";
 // option objc_class_prefix = "HLW";
 
-package blog_app;
+package blog;
 
 // The greeting service definition.
-service blog_post {
+service blog_service {
   rpc Show (ShowRequest) returns (ShowReply) {}
 }
 
-message Blog {
+message BlogPost {
   int32 id = 1;
   string title = 2;
 }
@@ -22,5 +22,5 @@ message ShowRequest {
 }
 
 message ShowReply {
-  Blog blog = 1;
+  BlogPost blog_post = 1;
 }
