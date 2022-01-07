@@ -54,7 +54,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'grpc'
-gem 'google-protobuf', '~> 3.12.0-rc1'
+gem 'google-protobuf', '~> 3.19.2'
 gem 'grpc-tools', '~> 1.28.0'
 gem 'pg'
 
